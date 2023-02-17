@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSS Div Image Hover</title>
+  <style type="text/css">
+    h1{
+      font-family:  Copperplate Gothic Light;
+      font-weight: bold;
+
+      font-size: 50px;
+      color: darkblue;
+      text-align: center;
+
+      text-shadow: 2px 2px 8px darkblue;
+      text-decoration: underline;
+      text-decoration-color: crimson;
+      text-decoration-style: dotted;
+    }
+    .container{
+      width: 90%;
+      padding: 20px;
+      margin: 100px auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-items: center;
+      background-color: peachpuff;
+    }
+    .box{
+      width: 250px;
+      margin: 0 10px;
+      text-align: center;
+      box-shadow: 0 0 10px 2px deeppink;
+      transition: 1s;
+    }
+    .box img,p{
+      display: block;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .box:hover{
+      transform: scale(1.3);
+      z-index: 2;
+    }
+ @media only screen and (max-width: 799px){
+      .container{flex-direction: column;}
+    }
+    p{
+      color: blue;
+      font-size: 30px;
+      font-family: 'Brush Script MT', cursive;
+      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    }
+  </style>
+</head>
+<body>
+  <h1> My Anime Girl Collection</h1>
+  <div class="container">
+    <div class="box">
+      <img src="banimegirl.jfif" alt="image" height=" 300px" width="150"><p>Girl 1</p>
+      </div>
+      <div class="box">
+        <img src="banimegirl1.jfif" alt="image" height=" 300px" width="150"><p>Girl 2</p>
+      </div>
+      <div class="box">
+        <img src="banimegirl2.jfif" alt="image" height=" 300px" width="150"><p>Girl 3</p>
+      </div>
+      <div class="box">
+        <img src="banimegirl3.jpg" alt="image" height=" 300px" width="150"><p>Girl 4</p>
+      </div>
+      <div class="box">
+        <img src="banimegirl4.jpg" alt="image" height=" 300px" width="150"><p>Girl 5</p>
+      </div>
+  </div>
+
+
+</body>
+</html>
